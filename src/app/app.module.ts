@@ -8,6 +8,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { LandingComponent } from './landing/landing.component';
 import { CartComponent } from './cart/cart.component';
 import { AuctionComponent } from './auction/auction.component';
+import { AppRoutingModule } from './app-routing.module';
 
 const appRoute: Routes = [
   {path: '', component:HomeComponent}
@@ -24,7 +25,8 @@ const appRoute: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoute)
+    RouterModule.forRoot(appRoute),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
