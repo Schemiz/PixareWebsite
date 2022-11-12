@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare function validate(): void; 
+
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
@@ -7,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor() { }
-
+  constructor() {
+    validate();
+  }
+ 
   ngOnInit(): void {
   }
 

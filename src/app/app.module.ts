@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { RegisterComponent } from './register/register.component';
 
 const appRoute: Routes = [
   {path: '', component:HomeComponent},
@@ -21,7 +22,8 @@ const appRoute: Routes = [
     LoginComponent,
     NavbarComponent,
     FooterComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
