@@ -24,83 +24,36 @@
       
     </style>
     
+    <!--Nav Bar-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-          
-          <ul class="navbar-nav">
-              <!--Nav Bar Buttons-->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" id="outer" href="#"><i class="bi bi-house-door"></i> Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="outer" href="#"> <i class="bi bi-bank"></i> Auction</a>
-            </li>
-            <a class="navbar mx-5" href="#"><img src="/assets/pics/PixareText.png" alt="PixareLogo" class="logoSize"></a>
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <li class="nav-item">
-              <a class="nav-link" id="inner" href="#">Favorites <i class="bi bi-heart-half"></i></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Cart&nbsp;<span class="feature bg-primary rounded-circle px-2 text-center">3</span>
-              </a>
-              <ul class="dropdown-menu">
-                <div class="container">
-                  <div class="shopping-cart">
-                    <div class="shopping-cart-header">
-                      <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
-                      <div class="shopping-cart-total">
-                        <span class="lighter-text">Total:</span>
-                        <span class="main-color-text">$2,229.97</span>
-                      </div>
-                    </div> <!--end shopping-cart-header -->
-                
-                    <ul class="shopping-cart-items">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <li class="clearfix">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
-                        <span class="item-name">Sony DSC-RX100M III</span>
-                        <span class="item-price">$849.99</span>
-                        <span class="item-quantity">Quantity: 01</span>
-                      </li>
-                        </div>
-                      </div>
-                      
-                
-                      <li class="clearfix">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg" alt="item1" />
-                        <span class="item-name">KS Automatic Mechanic...</span>
-                        <span class="item-price">$1,249.99</span>
-                        <span class="item-quantity">Quantity: 01</span>
-                      </li>
-                
-                      <li class="clearfix">
-                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg" alt="item1" />
-                        <span class="item-name">Kindle, 6" Glare-Free To...</span>
-                        <span class="item-price">$129.99</span>
-                        <span class="item-quantity">Quantity: 01</span>
-                      </li>
-                    </ul>
-                
-                    <a href="#" class="button">Checkout</a>
-                  </div> <!--end shopping-cart -->
-                </div> <!--end container -->
-              </ul>
-            </li>
-          </ul>
-         </div>
-      </div>
-    </nav>
-    
+            <ul class="navbar-nav">
+                <!--Nav Bar Buttons-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="outer" href="#"><i class="bi bi-house-door"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="outer" href="#"> <i class="bi bi-bank"></i> Auction</a>
+              </li>
+              <a class="navbar mx-5" href="#"><img src="/assets/pics/PixareText.png" alt="PixareLogo" class="logoSize"></a>
+              <li class="nav-item">
+                <a class="nav-link" id="inner" href="#">Favorites <i class="bi bi-heart-half"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="inner" href="#">Cart <i class="bi bi-cart4">&nbsp;<span class="feature bg-primary rounded-circle px-2 text-center">3</span> </i></a>
+            </ul>
+          </div>
+        </div>
+      </nav>
   </header>
   
   <!-- Declaration of Body/Routing -->
   <main>
-    <app-landing></app-landing>
+    <app-auction></app-auction>
   </main>
   
   <footer class="text-center text-dark" style="background-color: #EAB8BB">

@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { LandingComponent } from './landing/landing.component';
+import { CartComponent } from './cart/cart.component';
+import { AuctionComponent } from './auction/auction.component';
 
 const appRoute: Routes = [
   {path: '', component:HomeComponent}
@@ -17,6 +19,8 @@ const appRoute: Routes = [
     HomeComponent,
     CheckoutComponent,
     LandingComponent,
+    CartComponent,
+    AuctionComponent,
   ],
   imports: [
     BrowserModule,
