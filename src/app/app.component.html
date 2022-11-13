@@ -1,60 +1,57 @@
 <!-- Declaration of Navigation Bar -->
-  <header>
-    <style>
+<header>
+
+  <style>
     
-      .nav-item {
-        margin-top: 10px;
-        font-weight: 500;
-        font-size: 23px;
-      }
-
-      #outer {
-        margin-left: 25px;
-      }
-
-      #inner {
-        margin-right: 25px;
-      }
-
-      .navbar {
-        background-color: ghostwhite;
-      }
+    .nav-item {
+      font-weight: 500;
+      font-size: 20px;
+    }
 
 
-      
-    </style>
+    .navbar {
+      background-color: ghostwhite;
+    }
+
+
     
-    <!--Nav Bar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <ul class="navbar-nav">
-                <!--Nav Bar Buttons-->
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" id="outer" href="#"><i class="bi bi-house-door"></i> Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="outer" href="#"> <i class="bi bi-bank"></i> Auction</a>
-              </li>
-              <a class="navbar mx-5" href="#"><img src="/assets/pics/PixareText.png" alt="PixareLogo" class="logoSize"></a>
-              <li class="nav-item">
-                <a class="nav-link" id="inner" href="#">Favorites <i class="bi bi-heart-half"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="inner" href="#">Cart <i class="bi bi-cart4">&nbsp;<span class="feature bg-primary rounded-circle px-2 text-center">3</span> </i></a>
-            </ul>
-          </div>
-        </div>
-      </nav>
-  </header>
+  </style>
+  
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand d-lg-none" href="#"><img src="assets/pics/PixareText.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" id="outer" routerLink="/home" routerLinkActive="active current"><i class="bi bi-house-door"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="outer"  routerLink="/auction" routerLinkActive="active current"> <i class="bi bi-bank"></i> Auction</a>
+          </li>
+          <a class="d-none d-lg-block" routerLink="/" routerLinkActive="active current"><img src="assets/pics/PixareText.png" alt=""></a>
+          <li class="nav-item">
+            <a class="nav-link" id="inner" routerLink="/favorites" routerLinkActive="active current">Favorites <i class="bi bi-heart-half"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="inner"  routerLink="/cart" routerLinkActive="active current">Cart <i class="bi bi-cart4"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
   
   <!-- Declaration of Body/Routing -->
   <main>
     <router-outlet></router-outlet>
   </main>
+  
+
   
   <footer class="text-center text-dark" style="background-color: #fdccbc">
 
@@ -75,31 +72,31 @@
         <div class="row text-center d-flex justify-content-center pt-4">
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-dark">About us</a>
+              <a href="#!" class="text-dark" routerLink="/home" routerLinkActive="active">Home</a>
             </h6>
           </div>
 
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-dark">Home</a>
+              <a href="#!" class="text-dark" routerLink="/auction" routerLinkActive="active">Auction</a>
             </h6>
           </div>
 
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-dark">Marketplace</a>
+              <a href="#!" class="text-dark" routerLink="/about" routerLinkActive="active">About us</a>
             </h6>
           </div>
 
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-dark">Favorites</a>
+              <a href="#!" class="text-dark" routerLink="/favorites" routerLinkActive="active">Favorites</a>
             </h6>
           </div>
 
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-dark">Cart</a>
+              <a href="#!" class="text-dark" routerLink="/cart" routerLinkActive="active">Cart</a>
             </h6>
           </div>
         </div>

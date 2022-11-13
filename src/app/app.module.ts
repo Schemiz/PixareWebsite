@@ -9,6 +9,8 @@ import { LandingComponent } from './landing/landing.component';
 import { CartComponent } from './cart/cart.component';
 import { AuctionComponent } from './auction/auction.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { FavoritesComponent } from './favorites/favorites.component';
 
 const appRoute: Routes = [
   {path: '', component:HomeComponent}
@@ -22,6 +24,8 @@ const appRoute: Routes = [
     LandingComponent,
     CartComponent,
     AuctionComponent,
+    AboutusComponent,
+    FavoritesComponent,
   ],
   imports: [
     BrowserModule,
