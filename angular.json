@@ -26,7 +26,9 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/javascript/validate.js"
+              "src/assets/javascript/validate.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"
             ]
           },
           "configurations": {

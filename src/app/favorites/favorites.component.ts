@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './favorites.component.html',
   styleUrls: ['./favorites.component.css']
 })
-export class FavoritesComponent implements OnInit {
+export class FavoritesComponent implements OnInit{
 
   constructor() { }
 
