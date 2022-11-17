@@ -11,6 +11,7 @@
 
     .mt-n4 {
         margin-top: -1.5rem !important;
+        transition: width 2s, height 2s;
     }
 
 
@@ -18,7 +19,46 @@
         font-size: 70px;
     }
 
+    section {
+        animation: transitionIn 3s;
+    }
+
+    header {
+        animation: headerPop 1s;
+    }
+
+    
+
+    @keyframes headerPop {
+        from {
+            opacity: 0;
+            transform: rotateX(-100deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: rotateX(0);
+        }
+    }
+
+
+    @keyframes transitionIn {
+        from {
+            opacity: 0;
+            transform: rotateY(0deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: rotateY(0);
+        }
+    }
+
 </style>
+
+
+<div class="loader"></div>
+
 
 <!-- Header/Subheadings -->
 <body>
@@ -94,7 +134,7 @@
             </div>
 
 
-<!-- Register Modal -->
+            <!-- Register Modal -->
     <div class="modal fade" id="registerModal">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
@@ -168,7 +208,7 @@
         <div class="container px-lg-5">
             <div class="row">
                 <div class="col-lg-6 col-xxl-4 mb-5">
-                    <div class="card bg-light border-0 h-100">
+                    <div class="card bg-light border-0 h-100 ">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4" id="wew"><i class="bi bi-door-open"></i></div>
                             <h2 class="fs-4 fw-bold">Sign Up</h2>

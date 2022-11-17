@@ -1,9 +1,52 @@
- <!-- Header-->
+<style>
+
+
+    h1 {
+        animation: titlepop 2s;
+    }
+
+    p {
+        animation: subhead 4s;
+    }
+
+
+
+    @keyframes titlepop {
+        from {
+            opacity: 0;
+            transform: rotateX(360deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: rotateY(0);
+        }
+    }
+
+    @keyframes subhead {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+<!-- Header-->
  <header class="bg-info py-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">Bid on these Featured Auctions</h1>
-            <p class="lead fw-normal text-white-50 mb-0">Bid higher to have a greater chance on winning your bid!</p>
+            <h1 class="display-4 fw-bolder">Make it your own!</h1>
+            <p class="lead fw-normal mb-0">Find artworks for you to buy and claim it yours!</p>
         </div>
     </div>
 </header>

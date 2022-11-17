@@ -1,8 +1,105 @@
+<style>
+
+
+span {
+  top: 0.63em;  
+  text-transform: uppercase;  
+  transform: rotateX(-100deg);
+}
+
+.let1 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.let2 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.3s;
+}
+
+.let3 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.let4 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.5s;
+
+}
+
+.let5 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.6s;
+}
+
+.let6 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.7s;
+}
+
+.let7 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+.let8 {
+  animation: drop 1.2s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+@keyframes drop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    80% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        top: 6.94em
+    }
+}
+
+
+</style>
+
+
+
+
+
+
 <header class="bg-warning py-5">
     <div class="container px-4 px-lg-5 my-5">
         <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder">Welcome to Pixare!</h1>
-            <p class="lead fw-normal text-white-50 mb-0">We'll help you discover something new today!</p>
+            <h1 class="display-4 fw-bolder">
+                <span class="let1 fw-bolder">W</span>  
+                <span class="let2 fw-bolder">e</span>  
+                <span class="let3 fw-bolder">l</span>  
+                <span class="let4 fw-bolder">c</span>  
+                <span class="let5 fw-bolder">o</span>  
+                <span class="let6 fw-bolder">m</span>  
+                <span class="let7 fw-bolder">e</span>
+                <span class="let1 fw-bolder"> t</span>  
+                <span class="let7 fw-bolder">o</span>  
+                <span class="let6 fw-bolder"> P</span>  
+                <span class="let5 fw-bolder">i</span>  
+                <span class="let4 fw-bolder">x</span>  
+                <span class="let3 fw-bolder">a</span>
+                <span class="let2 fw-bolder">r</span>  
+                <span class="let1 fw-bolder">e</span>
+            </h1>
+            <p class="lead fw-bold mb-0">We'll help you discover something new today!</p>
         </div>
     </div>
 </header>
@@ -13,7 +110,7 @@
         <div class="p-4 p-lg-5 bg-light rounded-3 text-center"> 
             <!-- Gallery -->
             <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                     <a href="assets/arts/art1.png" data-lightbox="art-1">
                         <img src="assets/arts/art1.png"  class="w-100 shadow-1-strong rounded mb-4 img-fluid" /> 
                     </a>
@@ -23,7 +120,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-3 mb-4 mb-lg-0">
                     <a href="assets/arts/art9.jpg" data-lightbox="art-9">
                         <img src="assets/arts/art9.jpg" class="w-100 shadow-1-strong rounded mb-4 img-fluid"/>
                     </a>
@@ -33,13 +130,23 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-3 mb-4 mb-lg-0">
                     <a href="assets/arts/art3.png" data-lightbox="art4">
                         <img src="assets/arts/art3.png" class="w-100 shadow-1-strong rounded mb-4 img-fluid"/>
                     </a>
 
                     <a href="assets/arts/art11.jpg" data-lightbox="art5">
                         <img src="assets/arts/art11.jpg"class="w-100 shadow-1-strong rounded mb-4 img-fluid"/>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <a href="assets/arts/art9.jpg" data-lightbox="art4">
+                        <img src="assets/arts/art9.jpg" class="w-100 shadow-1-strong rounded mb-4 img-fluid"/>
+                    </a>
+
+                    <a href="assets/arts/art1.png" data-lightbox="art5">
+                        <img src="assets/arts/art1.png"class="w-100 shadow-1-strong rounded mb-4 img-fluid"/>
                     </a>
                 </div>
             </div>

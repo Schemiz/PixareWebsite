@@ -6,6 +6,26 @@
         background-size: cover;
     }
 
+    #library {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1.5s;
+        animation-name: animatebottom;
+        animation-duration: 1.5s
+    }
+
+    @-webkit-keyframes animatebottom {
+    from { bottom:-500px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+    }
+
+    @keyframes animatebottom { 
+    from{ bottom:-500px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+    }
+
+
+
 </style>
 
 
@@ -23,7 +43,7 @@
 </header>
 
 <section class="py-5 z-index-1 position-relative">
-    <div class="container-fluid px-lg-5">
+    <div class="container-fluid px-lg-5" id="library">
         <div class="p-4 p-lg-5 bg-light rounded-3 text-center"> 
             <!-- Gallery -->
             <div class="row">
