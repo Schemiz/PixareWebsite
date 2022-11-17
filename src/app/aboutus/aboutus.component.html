@@ -12,13 +12,52 @@
         border-radius: 100%;
     }
 
+    #left{
+        position: relative;
+        -webkit-animation-name: animateleft;
+        -webkit-animation-duration: 2s;
+        animation-name: animateleft;
+        animation-duration: 2s
+    }
+
+    @-webkit-keyframes animateleft {
+    from { left:-500px; opacity:0 } 
+    to { left:0px; opacity:1 }
+    }
+
+    @keyframes animateleft{ 
+    from{ left:-500px; opacity:0 } 
+    to{ left:0; opacity:1 }
+    }
+
+
+    #right{
+        position: relative;
+        -webkit-animation-name: animateright;
+        -webkit-animation-duration: 2s;
+        animation-name: animateright;
+        animation-duration: 2s
+    }
+
+    @-webkit-keyframes animateright {
+    from { right:-500px; opacity:0 } 
+    to { right:0px; opacity:1 }
+    }
+
+    @keyframes animateright { 
+    from{ right:-500px; opacity:0 } 
+    to{ right:0; opacity:1 }
+    }
+
+
+
 </style>
 
 
 <section>
     <div class="container">
         <div class="row align-items-center justify-content-center gap-3 py-5">
-            <div class="col-lg-5 col-md-12 bg-light rounded-5">
+            <div class="col-lg-5 col-md-12 bg-light rounded-5" id="left">
                 <div class="col-lg-12 my-4">
                     <div class="row text-center">
                             <div class="col-lg-12 col-md-6">
@@ -46,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-5 col-md-12 bg-light rounded-5">
+            <div class="col-lg-5 col-md-12 bg-light rounded-5" id="right">
                 <div class="col-lg-12 my-4">
                     <div class="row text-center">
                             <div class="col-lg-12 col-md-6">
@@ -64,7 +103,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-6 col-md-">
-                                <img src="assets/pics/portrait.jpg" alt="" class="img-fluid" style="">
+                                <img src="assets/pics/portrait.jpg" alt="" class="img-fluid">
                                 <h4>Matthew Bautista</h4>
                                 <div class="row"></div>
                                 <p class="text-wrap" style="width: 10rem; margin-left: auto; margin-right: auto;">Front End Developer

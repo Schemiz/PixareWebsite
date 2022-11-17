@@ -6,6 +6,38 @@ section {
     background-size: cover;
 }
 
+#card {
+  animation: fade 2s;
+}
+
+#buttons {
+  position: relative;
+  -webkit-animation-name: animateright;
+  -webkit-animation-duration: 3s;
+  animation-name: animateright;
+  animation-duration: 3s
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animateright {
+    from { right:-500px; opacity:0 } 
+    to { right:0px; opacity:1 }
+}
+
+@keyframes animateright { 
+    from{ right:-500px; opacity:0 } 
+    to{ right:0; opacity:1 }
+}
 
 </style>
 
@@ -15,7 +47,7 @@ section {
         <div class="col">
           <p><span class="h2">Shopping Cart </span><span class="h4">(1 item in your cart)</span></p>
   
-          <div class="card mb-4">
+          <div class="card mb-4" id="card">
             <div class="card-body p-4">
   
               <div class="row align-items-center">
@@ -138,7 +170,7 @@ section {
             </div>
           </div>
   
-          <div class="card mb-5">
+          <div class="card mb-5" id="card">
             <div class="card-body p-4">
   
               <div class="float-end">
@@ -151,7 +183,7 @@ section {
             </div>
           </div>
   
-          <div class="d-flex justify-content-end">
+          <div class="d-flex justify-content-end" id="buttons">
             <button type="button" class="btn btn-light btn-lg me-2">Continue Bidding</button>
             <a routerLink="/checkout" class="btn btn-primary btn-lg me-2">Proceed to Checkout</a>
           </div>

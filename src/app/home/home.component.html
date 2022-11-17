@@ -1,6 +1,10 @@
 <style>
 
 
+#head {
+    animation: fade 2.4s;
+}
+
 span {
   top: 0.63em;  
   text-transform: uppercase;  
@@ -71,17 +75,24 @@ span {
     }
 }
 
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}
 
 </style>
 
 
 
-
-
-
 <header class="bg-warning py-5">
     <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
+        <div class="text-center text-white" id="head">
             <h1 class="display-4 fw-bolder">
                 <span class="let1 fw-bolder">W</span>  
                 <span class="let2 fw-bolder">e</span>  
@@ -90,14 +101,15 @@ span {
                 <span class="let5 fw-bolder">o</span>  
                 <span class="let6 fw-bolder">m</span>  
                 <span class="let7 fw-bolder">e</span>
-                <span class="let1 fw-bolder"> t</span>  
+                <span class="let7 fw-bolder"> t</span>  
                 <span class="let7 fw-bolder">o</span>  
-                <span class="let6 fw-bolder"> P</span>  
-                <span class="let5 fw-bolder">i</span>  
-                <span class="let4 fw-bolder">x</span>  
-                <span class="let3 fw-bolder">a</span>
-                <span class="let2 fw-bolder">r</span>  
-                <span class="let1 fw-bolder">e</span>
+                <span class="let7 fw-bolder"> P</span>  
+                <span class="let6 fw-bolder">i</span>  
+                <span class="let5 fw-bolder">x</span>  
+                <span class="let4 fw-bolder">a</span>
+                <span class="let3 fw-bolder">r</span>  
+                <span class="let2 fw-bolder">e</span>
+                <span class="let1 fw-bolder">!</span>
             </h1>
             <p class="lead fw-bold mb-0">We'll help you discover something new today!</p>
         </div>
