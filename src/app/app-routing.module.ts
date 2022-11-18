@@ -11,6 +11,7 @@ import { LandingComponent } from './landing/landing.component';
 const routes: Routes = [
   {path: 'auction', component:AuctionComponent},
   {path: 'cart', component:CartComponent},
+  
   {path: 'checkout', component:CheckoutComponent},
   {path: 'home', component:HomeComponent},
   {path: 'about', component:AboutusComponent},

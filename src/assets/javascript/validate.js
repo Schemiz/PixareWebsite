@@ -14,4 +14,5 @@ function validate() {
         form.classList.add('was-validated')
       }, false)
     })
-}
+
+  }

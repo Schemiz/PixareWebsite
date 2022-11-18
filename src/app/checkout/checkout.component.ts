@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 declare function validate(): void; 
+declare var $:any;
 
 @Component({
   selector: 'app-checkout',
